@@ -15,9 +15,13 @@ const PORT=process.env.PORT || 3000
 
 
 
+
+
 //use the routers
 app.use('/person',personRoutes);
 app.use('/menu',menuItemRoutes);
-
+app.listen(PORT,()=>{
+    console.log("connected to the Port no."+PORT)
+});
 
 
